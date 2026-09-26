@@ -206,7 +206,8 @@ B1-B6 跑完 ≈ **24 页**,能撑起三栏目骨架(guides 15 / zombies 6 / ite
 - [x] apply-template 答案表——`gk2-apply-answers.json`(18 项:游戏名 Graveyard Keeper 2/短名 GK2/主题色 #4e7a3a 苔绿/栏目=guides+items→手工加 zombies/en 单语/清 demo/首页 preset 1/删 landing)
 - [x] **git 提交整树**——2026-09-26 B0-B3 全部内容统一提交到 `gk2-site` 分支
 - [x] **fork 测试口径收口**——上游 8 个模板元测试(断言 demo 态/landing/ja,换皮后必然红)移入 `tests/template-meta/` 并从 vitest+tsconfig 排除(不删除,保上游 merge 可解析);url/tags/seo/content-utils/routing-flags/home-ui 六个 fork 相关套件改为 en 单语口径修复;`pnpm test` 161/161 绿。fork 契约(见 scripts/e2e-apply-template.mjs)=build+check-config 绿,测试套件非 fork 承诺项
-- [ ] GSC 确认——资源验证 + sitemap 提交(部署后做,IndexNow 自动化的依赖);`PUBLIC_CF_BEACON_TOKEN` 建议一并填上开 CF Web Analytics
+- [x] **部署上线**——2026-09-26 CF Pages 直传 + 真域 graveyardkeeper2.app 绑定生效(zone active/DNS CNAME/证书签发全自动链路),线上四项 200;IndexNow 首推 40 URL(202)
+- [ ] GSC 确认——资源验证 + sitemap 提交(需用户 Google 账号操作;之后可接 anvil-ops 的 GSC 集成);`PUBLIC_CF_BEACON_TOKEN` 建议一并填上开 CF Web Analytics
 - [x] 换皮后删 demo 文章——apply-template 清 11 篇 demo 文+24 个 demo 资产+45 个 landing 文件;ja 目录残留 .gitkeep 已删
 - [x] zombies 分类手工落地——navigation.ts(en.json nav+overview 同步)+ `src/content/wiki/en/zombies/` 目录;check-config 绿
 - [x] 首页去 codes/bosses 化——en.json hero/start/explore/faq 四模块重写(FAQ 含「无官方兑换码」诚实口径)
