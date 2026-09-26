@@ -101,3 +101,17 @@ env -u ... npx wrangler pages deploy dist --project-name <project> --branch main
 
 **本地交付(A 线出口)**:素材库留存 / CONTENT-PLAN 八节 / check-config 绿 / 首页无 demo 残留 / typecheck 0 错 / 八门禁全绿(test 计数与 AGENTS 一致) / 已 commit
 **上线交付(B 线出口)**:线上四项 200 + title 正确 + canonical=真域 / IndexNow 202 / 分支已 push / GSC 步骤已移交
+
+## 附:各阶段技能与工具调用矩阵
+
+| 阶段 | Skill | CLI/脚本 | 内置工具 |
+|---|---|---|---|
+| 0 预检 | — | pnpm -v / wrangler whoami(剥代理) / gh auth / pnpm install | Bash·Read·Glob |
+| 1 素材 ⭐ | **youtube-content-gen**(方法论:搜寻→字幕→结构化提取;Gemini/Next.js 实现层不采用,v2.7.0 裁决) | **yt-dlp 三连**(ytsearch 搜视频 / --write-info-json 元数据+章节 / --write-subs 字幕,429 退避);备选:WebSearch(有配额)、agent-reach | **WebFetch Steam 商店页(官方事实锚点)**、Bash |
+| 2 计划 | anvil-find-keywords(可选:游戏未定/需求存疑时) | — | Read(GK2 样本骨架)、WebFetch(SERP 抽查) |
+| 3 换皮 | — | pnpm apply-template --answers / gen-assets / check-config / template-audit | Edit·Bash |
+| 4 内容 | **anvil-new-article**(单篇规范+Step 0 字幕提取)、**anvil-batch-articles**(同构批反重复) | pnpm gen-covers + 八门禁命令组 | **Agent 工具(3 路并行写文)**、Edit |
+| 5 部署 | — | wrangler(project create / deploy)、curl 轮询(剥代理) | Bash |
+| 6 收口 | 运营期:anvil-refresh / anvil-adsense-audit / anvilwiki-ops(GSC,可选) | pnpm submit-indexnow --site / gh push | Bash |
+
+素材置信分层纪律:Steam 官方事实=「已验证」层,YouTube 社区素材=「未验证待核」层——该分级直接决定写文 hedging 强度;info.json 的 chapters 字段是话题提取核心(比通读字幕省且准)。
