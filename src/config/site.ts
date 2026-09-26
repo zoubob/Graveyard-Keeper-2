@@ -62,37 +62,27 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: 'Anvil Quest Wiki',
-  shortName: 'AQ Wiki',
-  description:
-    'Complete Anvil Quest wiki with boss guides, tier lists, codes, item locations, and beginner tips. Every guide carries a last-verified date.',
-  domain: 'anvil.wiki',
-  tagline: 'Your forge for everything Anvil Quest',
-  legalNotice:
-    'Anvil Quest Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer.',
-  // 👉 APPLY TEMPLATE: set a real address if you run no social channels —
-  // the contact page renders it as a mailto link.
+  name: 'Graveyard Keeper 2 Wiki',
+  shortName: 'GK2',
+  description: 'Graveyard Keeper 2 wiki: beginner guides, zombie workforce and army systems, white and red skulls, town rebuilding and item guides - updated for version 1.0.',
+  domain: 'graveyardkeeper2.wiki',
+  tagline: 'Guides, zombie systems and graveyard economy for Graveyard Keeper 2',
+  legalNotice: 'Graveyard Keeper 2 Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer.',
+  // Set a real address if you run no social channels — the contact page
+  // renders it as a mailto link.
   contactEmail: '',
   social: {
-    official: 'https://example.com/anvil-quest',
-    discord: 'https://discord.gg/example',
-    youtube: 'https://youtube.com/@example',
-    twitter: 'https://twitter.com/example',
-    reddit: 'https://reddit.com/r/anvilquest',
+    official: 'https://store.steampowered.com/app/4358690/',
   },
-  // 👉 APPLY TEMPLATE: point these at the game's real canonical pages.
-  sameAs: [
-    'https://example.com/anvil-quest',
-    'https://en.wikipedia.org/wiki/Anvil_Quest',
-  ],
   game: {
-    name: 'Anvil Quest',
-    platform: 'Roblox',
-    developer: 'Forge Studios',
-    genre: 'Fantasy RPG',
-    releaseDate: '2026-01-15',
+    name: 'Graveyard Keeper 2',
+    platform: 'PC (Steam, GOG, Epic), PlayStation, Xbox, Nintendo Switch',
+    developer: 'Lazy Bear Games',
+    genre: 'Cemetery management sim / RPG',
+    releaseDate: 'September 22, 2026',
   },
-  // hero.webp is 1200×630 (the recommended OG share aspect ratio).
+  // og:image dims of the SHIPPED hero.webp — if you replace public/images/hero.webp,
+  // update these in src/config/site.ts to match (wrong dims mis-crop share cards).
   ogImageWidth: 1200,
   ogImageHeight: 630,
 };

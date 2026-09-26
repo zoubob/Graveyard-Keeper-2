@@ -1,11 +1,11 @@
 {
-  "name": "Anvil Quest Wiki",
-  "short_name": "AQ Wiki",
-  "description": "Complete Anvil Quest wiki with boss guides, codes, and tier lists.",
+  "name": "Graveyard Keeper 2 Wiki",
+  "short_name": "GK2",
+  "description": "Graveyard Keeper 2 wiki: beginner guides, zombie workforce and army systems, white and red skulls, town rebuilding and item guides - updated for version 1.0.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#f36716",
+  "theme_color": "#4d7939",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

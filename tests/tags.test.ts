@@ -24,6 +24,9 @@ describe('slugifyTag', () => {
   });
 });
 
+// en-only site: keep the generic prefix coverage via a cast (see url.test.ts).
+const ja = 'ja' as never;
+
 describe('tag/recent URL helpers', () => {
   it('builds unprefixed English paths', () => {
     expect(tagsPath('en')).toBe('/tags/');
@@ -31,9 +34,9 @@ describe('tag/recent URL helpers', () => {
     expect(recentPath('en')).toBe('/recent/');
   });
   it('prefixes non-default locales', () => {
-    expect(tagsPath('ja')).toBe('/ja/tags/');
-    expect(tagPath('fire-boss', 'ja')).toBe('/ja/tags/fire-boss/');
-    expect(recentPath('ja')).toBe('/ja/recent/');
+    expect(tagsPath(ja)).toBe('/ja/tags/');
+    expect(tagPath('fire-boss', ja)).toBe('/ja/tags/fire-boss/');
+    expect(recentPath(ja)).toBe('/ja/recent/');
   });
 });
 
