@@ -5,7 +5,7 @@ description: 给一个游戏名/关键词,端到端建成一个 AnvilWiki 英文
 
 # AnvilWiki 一站式建站管线(游戏名 → 线上站点)
 
-从 2026-09-26 Graveyard Keeper 2 站(立项到上线 <1 天)实战提炼。**两条线**:A 本地开发线(阶段 0-4)交付一个门禁全绿的本地站点;B 发布线(阶段 5-6)默认**等用户明确指令**(「发布 CF」)才启动——支持本地建好、审查后再上线的节奏。参考实现:`CONTENT-PLAN.md` + `seo-reports/gk2-materials/`(GK2 站基准样本)。
+从 2026-09-26 Graveyard Keeper 2 站(立项到上线 <1 天)实战提炼。**两条线**:A 本地开发线(阶段 0-4)交付一个门禁全绿的本地站点;B 发布线(阶段 5-6)默认**等用户明确指令**(「发布 CF」)才启动——支持本地建好、审查后再上线的节奏。基准样本(GK2 站,绝对路径供任意仓库调用时参照):`/Users/zoubob/Documents/AIcoding/webApp/200609/youxizhan/Graveyard-Keeper-2/` 下的 `CONTENT-PLAN.md` + `seo-reports/gk2-materials/` + `gk2-apply-answers.json`。
 
 ## 输入与默认值
 
