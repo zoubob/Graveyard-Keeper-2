@@ -65,7 +65,7 @@ export const site: SiteConfig = {
   name: 'Graveyard Keeper 2 Wiki',
   shortName: 'GK2',
   description: 'Graveyard Keeper 2 wiki: beginner guides, zombie workforce and army systems, white and red skulls, town rebuilding and item guides - updated for version 1.0.',
-  domain: 'graveyardkeeper2.wiki',
+  domain: 'graveyardkeeper2.app',
   tagline: 'Guides, zombie systems and graveyard economy for Graveyard Keeper 2',
   legalNotice: 'Graveyard Keeper 2 Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer.',
   // Set a real address if you run no social channels — the contact page

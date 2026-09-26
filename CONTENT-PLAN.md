@@ -201,7 +201,7 @@ B1-B6 跑完 ≈ **24 页**,能撑起三栏目骨架(guides 15 / zombies 6 / ite
 
 ## 七、B0 启动前一次性检查(2026-09-26 列,做完勾掉)
 
-- [x] **域名定案**——2026-09-26 先用占位域 `graveyardkeeper2.wiki` 完成换皮(未部署无 SEO 影响);正式购入后全局替换该域(wrangler.toml SITE_URL + site.ts domain 两处)+ Cloudflare 绑定,再走「先绑域→改 SITE_URL→再部署」
+- [x] **域名定案**——2026-09-26 先用占位域 `graveyardkeeper2.app` 完成换皮(未部署无 SEO 影响);正式购入后全局替换该域(wrangler.toml SITE_URL + site.ts domain 两处)+ Cloudflare 绑定,再走「先绑域→改 SITE_URL→再部署」
 - [x] **换皮执行位置**——2026-09-26 定为本仓新分支 `gk2-site`(main 保持模板原样可回退/可对照;如需独立仓库,推该分支即可)
 - [x] apply-template 答案表——`gk2-apply-answers.json`(18 项:游戏名 Graveyard Keeper 2/短名 GK2/主题色 #4e7a3a 苔绿/栏目=guides+items→手工加 zombies/en 单语/清 demo/首页 preset 1/删 landing)
 - [x] **git 提交整树**——2026-09-26 B0-B3 全部内容统一提交到 `gk2-site` 分支
