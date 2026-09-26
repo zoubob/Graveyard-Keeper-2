@@ -1,6 +1,6 @@
 ---
 name: anvil-launch-site
-description: 给一个游戏名/关键词,端到端建成一个 AnvilWiki 英文攻略站:环境预检 → 素材采集(yt-dlp+Steam 官方事实)→ 内容总计划(对齐 herosiege 格式)→ apply-template 换皮 → 首批内容并行生产+八门禁 →【本地交付检查点】→ CF Pages 直传部署 → 域名绑定轮询 → IndexNow/GitHub 收口。触发词:建站/上线一个游戏攻略站/launch site/新游戏站/给 XX 做个 wiki/发布 CF。
+description: 给一个游戏名/关键词,端到端建成一个 AnvilWiki 英文攻略站:环境预检 → 素材采集(yt-dlp+Steam 官方事实)→ 内容总计划(根目录 CONTENT-PLAN.md,对齐 GK2 样本八节格式)→ apply-template 换皮 → 首批内容并行生产+八门禁 →【本地交付检查点】→ CF Pages 直传部署 → 域名绑定轮询 → IndexNow/GitHub 收口。触发词:建站/上线一个游戏攻略站/launch site/新游戏站/给 XX 做个 wiki/发布 CF。
 ---
 
 # AnvilWiki 一站式建站管线(游戏名 → 线上站点)
