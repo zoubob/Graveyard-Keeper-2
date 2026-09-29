@@ -168,7 +168,7 @@ GK2 是单机买断制,无赛季循环。双层按**版本补丁**切:
 
 ### 成熟态定位说明
 
-B1-B6 跑完 ≈ **24 页**,能撑起三栏目骨架(guides 15 / zombies 6 / items 6 + 前置)。GK2 是刚发售的单机新游,关键词宇宙比 Hero Siege(22 职业×赛季循环)小,**成熟态诚实预估 ~45-60 页**(B7-B8 补全 + GSC 数据回流),不虚设 90+ 目标。优先级原则不变:每篇立项必须有素材来源与真实搜索意图,不为凑"完整"造薄页。
+B1-B5 跑完 = **24 页**(guides 13 / zombies 6 / items 5 + 首页与列表页),三栏目骨架已成立;B1-B6 跑完 ≈ **29 页**(B6 补 guides ×3 + items ×2)。GK2 是刚发售的单机新游,关键词宇宙比 Hero Siege(22 职业×赛季循环)小,**成熟态诚实预估 ~45-60 页**(B7-B8 补全 + GSC 数据回流),不虚设 90+ 目标。优先级原则不变:每篇立项必须有素材来源与真实搜索意图,不为凑"完整"造薄页。
 
 ### 已收口决策
 
@@ -197,7 +197,7 @@ B1-B6 跑完 ≈ **24 页**,能撑起三栏目骨架(guides 15 / zombies 6 / ite
 | Codes | 0 | 永久不设(除非官方发码) | 0 |
 | **合计** | **24** | **B6-B8 ≈ +10 → 滚动** | **~45-60** |
 
-执行顺序进展(2026-09-29):素材底座就位(12 视频 + 7 字幕 + 官方事实)→ **B0 换皮完成**(apply-template 18 项答案表 + zombies 分类 + 首页去 demo 化 + 品牌资产生成,`gk2-site` 分支)→ **B1+B2+B3 共 16 篇发布就绪**(2026-09-26)→ **B4+B5 共 8 篇发布就绪**(2026-09-29,全部 935-1093 词、封面 1200×675 已接线、每篇嵌源视频+FAQ)→ **当前 24 篇**,八门禁本地全绿(test 161/161,typecheck 0 错,check-content 24 MDX 干净,check-links 2019 链接零断链)→ **下一步:域名购买 → 部署 → GSC**;B6 起按日历推进。
+执行顺序进展(2026-09-29):素材底座就位(12 视频 + 7 字幕 + 官方事实)→ **B0 换皮完成**(apply-template 18 项答案表 + zombies 分类 + 首页去 demo 化 + 品牌资产生成,`gk2-site` 分支)→ **B1+B2+B3 共 16 篇发布就绪**(2026-09-26)→ **B4+B5 共 8 篇发布就绪**(2026-09-29,全部 935-1093 词、封面 1200×675 已接线、每篇嵌源视频+FAQ)→ **当前 24 篇**,八门禁本地全绿(test 161/161,typecheck 0 错,check-content 24 MDX 干净,check-links 49 页 2019 链接零断链)→ **已上线**(2026-09-29 重发 49 URL sitemap + IndexNow 48 URL 202;8 篇新页逐条 200)→ 刷新度审计 ✅ 24 篇无过期 → **下一步只剩 GSC 门**(用户侧网域验证 + sitemap 提交);之后 B6 按日历推进。
 
 B4+B5 产出与三处偏离记录(必须有据可查,勿在下一批重复):
 - **`items/tools-tier-list` 未走 §2.3 的「IG 核实后发」门**(2026-09-29 决定):首发窗口内无 IG 实测条件,若继续压着不发等于把「graveyard keeper 2 tools」这一批首选词整批让给竞品。改以**诚实缺口页**形态发布——正文只写社区已报的 rusty→bronze→iron 方向与 mastery ±1/±2 数值,并显式声明「v1.0 无公开完整梯队,S-F 排名会是虚构,本 wiki 不发虚构」;标题与 description 均标注为「What Is Actually Confirmed」,不冒充梯队结论。IG 核实后应作为**升级**而非重写:补全梯队表并把诚实节降级为脚注。
@@ -213,7 +213,7 @@ B4+B5 产出与三处偏离记录(必须有据可查,勿在下一批重复):
 - [x] apply-template 答案表——`gk2-apply-answers.json`(18 项:游戏名 Graveyard Keeper 2/短名 GK2/主题色 #4e7a3a 苔绿/栏目=guides+items→手工加 zombies/en 单语/清 demo/首页 preset 1/删 landing)
 - [x] **git 提交整树**——2026-09-26 B0-B3 全部内容统一提交到 `gk2-site` 分支
 - [x] **fork 测试口径收口**——上游 8 个模板元测试(断言 demo 态/landing/ja,换皮后必然红)移入 `tests/template-meta/` 并从 vitest+tsconfig 排除(不删除,保上游 merge 可解析);url/tags/seo/content-utils/routing-flags/home-ui 六个 fork 相关套件改为 en 单语口径修复;`pnpm test` 161/161 绿。fork 契约(见 scripts/e2e-apply-template.mjs)=build+check-config 绿,测试套件非 fork 承诺项
-- [x] **部署上线**——2026-09-26 CF Pages 直传 + 真域 graveyardkeeper2.app 绑定生效(zone active/DNS CNAME/证书签发全自动链路),线上四项 200;IndexNow 首推 40 URL(202)
+- [x] **部署上线**——2026-09-26 CF Pages 直传 + 真域 graveyardkeeper2.app 绑定生效(zone active/DNS CNAME/证书签发全自动链路),线上四项 200;IndexNow 首推 40 URL(202)。**2026-09-29 B4+B5 上线后重发:49 URL sitemap / IndexNow 48 URL(202),8 篇新页逐条 200**,canonical/og:image 抽验正确(⚠️ 直传部署无 git-connected CI,v2.36 IndexNow 自动化不生效——每次部署后手动 `pnpm submit-indexnow --site` 是唯一通道)
 - [ ] GSC 确认——资源验证 + sitemap 提交(需用户 Google 账号操作;之后可接 anvil-ops 的 GSC 集成);`PUBLIC_CF_BEACON_TOKEN` 建议一并填上开 CF Web Analytics
 - [x] 换皮后删 demo 文章——apply-template 清 11 篇 demo 文+24 个 demo 资产+45 个 landing 文件;ja 目录残留 .gitkeep 已删
 - [x] zombies 分类手工落地——navigation.ts(en.json nav+overview 同步)+ `src/content/wiki/en/zombies/` 目录;check-config 绿
