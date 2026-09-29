@@ -1,0 +1,91 @@
+---
+title: "Graveyard Keeper 2 Cemetery Quality: Rating Math and Grave Optimization"
+description: "The community-reported cemetery quality formula in Graveyard Keeper 2: min(decoration, white skulls) minus red skulls, plus how to optimize graves."
+category: "items"
+image: '../../../../assets/covers/en-items-cemetery-quality.png'
+date: 2026-09-29
+lastModified: 2026-09-29
+tags: ["graveyard", "items", "tips"]
+gameVersion: '1.0'
+summary: "Cemetery quality in Graveyard Keeper 2 is limited by a corpse's white skulls, dragged down by its red skulls, and boosted by decoration. The community-reported rule is min(decoration, white skulls) minus red skulls, so purify the corpse, clear the ground, and only deck out graves that have enough white skulls to reward it."
+videos: ["V0vdqE2Kboc", "l2EXlN4NbWk"]
+faq:
+  - question: "How is cemetery quality calculated in Graveyard Keeper 2?"
+    answer: "Community coverage reports an approximate rule of min(total decoration, white skulls) minus red skulls. Put another way, the lower of your decoration and the corpse's white skulls sets the ceiling, and red skulls subtract from it. The game does not surface this in a tooltip, so treat it as community-reported rather than confirmed."
+  - question: "Why do red skulls lower grave quality?"
+    answer: "Red skulls measure a corpse's corruption, and community coverage reports they pull the grave rating down rather than adding to it. That is why players remove blood and fat during the autopsy before burying anyone, giving the grave a cleaner foundation."
+  - question: "Do trees and empty holes affect cemetery quality?"
+    answer: "Yes. Community coverage reports that trees and empty holes can deduct points from the evaluation, so the advice is to clear the ground before investing heavily in decoration. It is a cheap fix that stops you losing rating to something easy to remove."
+  - question: "Can you fix a bad burial?"
+    answer: "Community coverage describes buying an exhumation certificate to remove bodies limiting your best spaces and replacing them with higher-white-skull corpses. Cemetery quality is a gradual project you improve over time rather than a single perfect pass."
+---
+
+## How Is Cemetery Quality Calculated in Graveyard Keeper 2?
+
+Cemetery quality looks like a decoration score, but community coverage of advanced tips reports it is really a corpse score wearing decorations. The stated rule is blunt: decoration does not work miracles, because the grave quality is limited by the corpse's white skulls and the red skulls still pull that rating down.
+
+If you already know what white and red skulls mean, the [skull system explained](/zombies/skull-system-explained/) page covers that foundation — this article picks up where it stops and deals with the rating math and how to push it upward. The game does not surface any of this in a tooltip, so everything below is community-reported rather than confirmed by the developers. Treat it as a model that fits observed behaviour, not an official formula.
+
+## What Is the Reported Cemetery Quality Formula?
+
+The clearest statement in the coverage is approximate:
+
+| Reported step | What it means |
+| --- | --- |
+| Take the lower value | Between total decoration and the corpse's white skulls |
+| Subtract the red skulls | Red skulls reduce the rating rather than adding to it |
+
+Written out, that is `min(total decoration, white skulls) - red skulls`. The important word is **min**: decoration above your white-skull count does nothing, because the corpse's purity is the ceiling. A grave can be under-decorated (you left points on the table) or over-decorated (you spent materials for no return), and only the first is worth fixing with more decoration.
+
+## Why Do White Skulls Cap Your Grave Rating?
+
+Because decoration is measured against white skulls, not added to them. Community coverage puts it plainly: putting excellent decoration on a body with few white skulls is wasting material without taking full advantage of its potential. The headstone and fence are a multiplier on a ceiling the corpse sets, so a low-white-skull body will not be rescued by a lavish grave — you would be paying for points the min() rule discards.
+
+Instead of buying better tombstones to fix a weak grave, the higher-leverage move is to improve the corpse before it goes in the ground.
+
+## How Do You Reduce Red Skulls Before Burying?
+
+Red skulls are the term that actively hurts you, so the coverage's routine is to strip them before burial: before burying anybody, go through the autopsy and remove the blood and fat to reduce the red skulls, which gives the grave a better foundation. Only then do you think about the headstone and fence. Cleaning the body first and decorating second is the order that matters — decoration is the last step, not the first.
+
+This is what purified final balance means in the broader community framing: you clean the corpse until the largest possible amount of white skulls remains, and a well-sculpted grave on top of that purified body is what raises the sacred area's general score. The related handling for those stripped parts is covered in our [organs guide](/items/organs-guide/), because the blood and fat you pull out are routed somewhere else rather than thrown away.
+
+## Should You Decorate Every Grave the Same Way?
+
+No, and the coverage is direct about it: decorating a low-white-skull body wastes material you cannot get back. Save the good tombstones and fences for graves that have enough white skulls to benefit, and leave the weak ones plain until you can improve or replace the body underneath.
+
+That is where the money loop closes. Cemetery quality is what funds the profitable sermons, which the [money-making guide](/guides/money-making-guide/) documents in detail, so every decoration material spent on a capped grave is income you did not get back. Spend where the ceiling is high.
+
+## What Else Drags Cemetery Quality Down?
+
+Two quiet drains the coverage calls out: trees and empty holes. Both can deduct points from the evaluation, which is why the recommendation is to clear the ground before investing heavily in decoration. Clearing is far less exciting than a new headstone, but it is cheap, permanent, and stops you losing rating to something you can fix in a minute.
+
+In practice that means a tidy-up pass before a decoration push. Clear the trees, fill the open holes, and only then start placing the pieces you paid for — otherwise you are decorating around a penalty.
+
+## What If You Already Buried Bad Corpses?
+
+You are not stuck with them. Community coverage describes the fix as a routine, not a disaster: you buy the exhumation certificate, remove the bodies that are limiting your best spaces, and replace them with others having more white skulls. Cemetery quality becomes a gradual project — you improve the worst plots over time instead of expecting one pass to be perfect.
+
+So do not agonise over early burials. Treat the yard as a queue of plots to upgrade, spending exhumation certificates on the positions that cap your best spaces, and let the rating climb as better corpses arrive. The [corpse management guide](/guides/corpse-management/) is the companion piece for handling that intake and replacement flow.
+
+## How Should You Route a Body — Grave or Zombie?
+
+Cemetery quality and the workforce compete for the same scarce resource: corpses. The coverage's routing rule is clean:
+
+| Corpse profile | Destination | Why |
+| --- | --- | --- |
+| High white skulls, low red skulls | The grave | Raises cemetery quality and sermon income |
+| Many red skulls | Worker or soldier | Red skulls are wasted on a grave |
+
+Burying a red-skull body hurts the rating you are trying to raise and spends a body that would have made a better worker. The [organs guide](/items/organs-guide/) covers the workforce side, and once your yard is stable you can pour the surplus into the town projects covered in the [town rebuilding guide](/guides/town-rebuilding/).
+
+## What Is the Practical Optimization Routine?
+
+In order, the loop reads like this:
+
+1. **Autopsy every corpse before it goes in.** Remove blood and fat to reduce red skulls.
+2. **Check the white-skull ceiling.** If it is low, do not spend good decoration on it.
+3. **Clear the ground.** Remove trees and fill empty holes that deduct points.
+4. **Decorate only where the min() rule rewards it.** Good pieces on high-white-skull graves.
+5. **Exhume and replace the worst plots later.** Buy exhumation certificates as income allows.
+
+Nothing here is a hidden trick — it is just the discipline of reading `min(decoration, white skulls) - red skulls` and acting on whichever term is actually limiting the grave in front of you.

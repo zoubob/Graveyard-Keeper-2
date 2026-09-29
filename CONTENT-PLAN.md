@@ -159,8 +159,8 @@ GK2 是单机买断制,无赛季循环。双层按**版本补丁**切:
 | **B1** | 换皮完成当周 | **首发热度 7 篇**(发售黄金窗口,每拖一周窗口贬值;items 概览提前投产补空分类) | guides ×4(beginner/money/vs1/worth-it)+ zombies ×2(hub/skulls)+ items ×1(getting-started) | ✅ 2026-09-26 发布就绪 |
 | **B2** | 第 2 周 | **系统深化** | guides ×4:tech-points / insanity / day-of-week / town | ✅ 2026-09-26 发布就绪(与 B1 同批) |
 | **B3** | 第 3 周 | **僵尸深挖**(护城河周) | zombies ×4:logistics / embalming / squads / gardening-perks + guides corpse-management | ✅ 2026-09-26 发布就绪;zombie-guide 枢纽页深链已回填 |
-| **B4** | 第 4 周 | **Items 起步** | items ×4:food / tools / organs / cemetery-quality | 待启动 |
-| **B5** | 第 5 周 | **战斗与进程** | guides ×4:tower-defense / act-1 / story / achievements | 待启动 |
+| **B4** | 第 4 周 | **Items 起步** | items ×4:food / tools / organs / cemetery-quality | ✅ 2026-09-29 发布就绪 |
+| **B5** | 第 5 周 | **战斗与进程** | guides ×4:tower-defense / act-1 / story / achievements | ✅ 2026-09-29 发布就绪 |
 | **B6** | 第 6 周 | **运营与军备** | guides ×3(inventory/faith/performance)+ items ×2(selling/armor) | 待启动 |
 | **B7** | 第 7-8 周 | **补全 Ⅰ**(首月复盘定向) | guides ×2(demo-save/console)+ zombies ×2(factory/overload) | 待启动 |
 | **B8+** | 第 9 周+ | **数据回流滚动** | GSC 插队页 + items 深水区;成熟态后转「保鲜 + 按数据扩页」模式 | 待启动 |
@@ -190,14 +190,21 @@ B1-B6 跑完 ≈ **24 页**,能撑起三栏目骨架(guides 15 / zombies 6 / ite
 
 | 板块 | 已建 | 待建(按批) | 成熟态 |
 |---|---|---|---|
-| Guides | **9**(B1 ×4 + B2 ×4 + B3 ×1) | B5 ×4 → B6 ×3 → B7 ×2 → 滚动 | ~25-30 |
+| Guides | **13**(B1 ×4 + B2 ×4 + B3 ×1 + B5 ×4) | B6 ×3 → B7 ×2 → 滚动 | ~25-30 |
 | Zombies | **6**(B1 ×2 + B3 ×4) | B7 ×2 | ~8-10 |
-| Items | **1**(getting-started 提前投产) | B4 ×4 → B6 ×2 → B8+ 滚动 | ~10-15 |
+| Items | **5**(getting-started 提前投产 + B4 ×4) | B6 ×2 → B8+ 滚动 | ~10-15 |
 | Combat/Bosses | 0 | ⏸ 触发条件制(§2.4) | 0-5 |
 | Codes | 0 | 永久不设(除非官方发码) | 0 |
-| **合计** | **16** | **B4-B8 ≈ +15 → 滚动** | **~45-60** |
+| **合计** | **24** | **B6-B8 ≈ +10 → 滚动** | **~45-60** |
 
-执行顺序进展(2026-09-26):素材底座就位(12 视频 + 7 字幕 + 官方事实)→ **B0 换皮完成**(apply-template 18 项答案表 + zombies 分类 + 首页去 demo 化 + 品牌资产生成,`gk2-site` 分支)→ **B1+B2+B3 共 16 篇全部发布就绪**(全部 800-1100 词、封面 1200×675 已接线、16 页 1360 条内链审计通过、每篇嵌源视频+FAQ;单源话题强 hedge,day-of-week 页含诚实「未验证」节)→ 八门禁本地全绿(test 161/161,typecheck 0 错,check-links 1360 链接零断链)→ **下一步:域名购买 → 部署 → GSC**;B4 起按日历推进。
+执行顺序进展(2026-09-29):素材底座就位(12 视频 + 7 字幕 + 官方事实)→ **B0 换皮完成**(apply-template 18 项答案表 + zombies 分类 + 首页去 demo 化 + 品牌资产生成,`gk2-site` 分支)→ **B1+B2+B3 共 16 篇发布就绪**(2026-09-26)→ **B4+B5 共 8 篇发布就绪**(2026-09-29,全部 935-1093 词、封面 1200×675 已接线、每篇嵌源视频+FAQ)→ **当前 24 篇**,八门禁本地全绿(test 161/161,typecheck 0 错,check-content 24 MDX 干净,check-links 2019 链接零断链)→ **下一步:域名购买 → 部署 → GSC**;B6 起按日历推进。
+
+B4+B5 产出与三处偏离记录(必须有据可查,勿在下一批重复):
+- **`items/tools-tier-list` 未走 §2.3 的「IG 核实后发」门**(2026-09-29 决定):首发窗口内无 IG 实测条件,若继续压着不发等于把「graveyard keeper 2 tools」这一批首选词整批让给竞品。改以**诚实缺口页**形态发布——正文只写社区已报的 rusty→bronze→iron 方向与 mastery ±1/±2 数值,并显式声明「v1.0 无公开完整梯队,S-F 排名会是虚构,本 wiki 不发虚构」;标题与 description 均标注为「What Is Actually Confirmed」,不冒充梯队结论。IG 核实后应作为**升级**而非重写:补全梯队表并把诚实节降级为脚注。
+- **`items/organs-guide` 源字幕缺失**:A2(R1SfY1jXYgw)字幕多次重试仍 HTTP 429(2026-09-26 与 09-29 两轮),改用该视频章节目录骨架 + 另一频道 advanced-tips 覆盖佐证,hedge 强度为本批最高(每节带「community-reported」),并在正文开头显式声明「官方材料未展开,以下按社区报道读」。
+- **`guides/act-1-walkthrough` 无官方幕次结构**:v1.0 无官方 Act 划分,该页按「某位首发周 100% 通关玩家的解锁顺序」重构,并在正文与 FAQ 两处声明「非官方幕次」;demo 的「Trigger the End of Act 1」仅作为观察信号引用且标注为 demo 切片。
+- **`guides/story-premise` / `guides/achievements` 同为社区单源**:`Emberville` 等地名沿用既有 `town-rebuilding` 页的同一 hedge口径(社区报道非官方);成就名来自首发周 100% 通关视频逐条转录(17 项),未在游戏内二次核实,均标 community-reported。
+- 本批顺手修:`wrangler.toml` 重复 `pages_build_output_dir` 键(非法 TOML,上一批文本编辑残留);2 处**内部流程泄漏**成正文(tools 页曾写「本页被标记待游戏内核实」、organs 页曾写「该视频字幕未抓到」)——已改写为面向读者的语言。**新批质检项:成稿后全文 grep 一次「本页/我们/字幕/核实流程」类自指词。**
 
 ## 七、B0 启动前一次性检查(2026-09-26 列,做完勾掉)
 
