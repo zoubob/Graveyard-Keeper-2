@@ -70,7 +70,7 @@ export const site: SiteConfig = {
   legalNotice: 'Graveyard Keeper 2 Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer.',
   // Set a real address if you run no social channels — the contact page
   // renders it as a mailto link.
-  contactEmail: '',
+  contactEmail: 'contact@graveyardkeeper2.app',
   social: {
     official: 'https://store.steampowered.com/app/4358690/',
   },
