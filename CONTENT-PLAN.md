@@ -161,14 +161,14 @@ GK2 是单机买断制,无赛季循环。双层按**版本补丁**切:
 | **B3** | 第 3 周 | **僵尸深挖**(护城河周) | zombies ×4:logistics / embalming / squads / gardening-perks + guides corpse-management | ✅ 2026-09-26 发布就绪;zombie-guide 枢纽页深链已回填 |
 | **B4** | 第 4 周 | **Items 起步** | items ×4:food / tools / organs / cemetery-quality | ✅ 2026-09-29 发布就绪 |
 | **B5** | 第 5 周 | **战斗与进程** | guides ×4:tower-defense / act-1 / story / achievements | ✅ 2026-09-29 发布就绪 |
-| **B6** | 第 6 周 | **运营与军备** | guides ×3(inventory/faith/performance)+ items ×2(selling/armor) | 待启动 |
-| **B7** | 第 7-8 周 | **补全 Ⅰ**(首月复盘定向) | guides ×2(demo-save/console)+ zombies ×2(factory/overload) | 待启动 |
+| **B6** | 第 6 周 | **运营与军备** | guides ×3(inventory/faith/performance)+ items ×2(selling/armor) | ✅ 2026-10-01 发布就绪 |
+| **B7** | 第 7-8 周 | **补全 Ⅰ**(首月复盘定向) | guides ×2(demo-save/console)+ zombies ×2(factory/overload) | ✅ 2026-10-01 发布就绪 |
 | **B8+** | 第 9 周+ | **数据回流滚动** | GSC 插队页 + items 深水区;成熟态后转「保鲜 + 按数据扩页」模式 | 待启动 |
 | 滚动 | 随时 | 官方补丁 → 版本层页刷新 `lastModified` / 竞品 wiki 复查(10-06)/ 官方 DLC 公告 → 预览词预埋 | §2 各表 | 常态 |
 
 ### 成熟态定位说明
 
-B1-B5 跑完 = **24 页**(guides 13 / zombies 6 / items 5 + 首页与列表页),三栏目骨架已成立;B1-B6 跑完 ≈ **29 页**(B6 补 guides ×3 + items ×2)。GK2 是刚发售的单机新游,关键词宇宙比 Hero Siege(22 职业×赛季循环)小,**成熟态诚实预估 ~45-60 页**(B7-B8 补全 + GSC 数据回流),不虚设 90+ 目标。优先级原则不变:每篇立项必须有素材来源与真实搜索意图,不为凑"完整"造薄页。
+B1-B7 跑完 = **33 页**(guides 18 / zombies 8 / items 7 + 首页与列表页),三栏目骨架已成立且各自进入目标区间下沿(zombies 已达区间中位)。GK2 是刚发售的单机新游,关键词宇宙比 Hero Siege(22 职业×赛季循环)小,**成熟态诚实预估 ~45-60 页**(B7-B8 补全 + GSC 数据回流),不虚设 90+ 目标。优先级原则不变:每篇立项必须有素材来源与真实搜索意图,不为凑"完整"造薄页。
 
 ### 已收口决策
 
@@ -190,14 +190,14 @@ B1-B5 跑完 = **24 页**(guides 13 / zombies 6 / items 5 + 首页与列表页),
 
 | 板块 | 已建 | 待建(按批) | 成熟态 |
 |---|---|---|---|
-| Guides | **13**(B1 ×4 + B2 ×4 + B3 ×1 + B5 ×4) | B6 ×3 → B7 ×2 → 滚动 | ~25-30 |
-| Zombies | **6**(B1 ×2 + B3 ×4) | B7 ×2 | ~8-10 |
-| Items | **5**(getting-started 提前投产 + B4 ×4) | B6 ×2 → B8+ 滚动 | ~10-15 |
+| Guides | **18**(B1 ×4 + B2 ×4 + B3 ×1 + B5 ×4 + B6 ×3 + B7 ×2) | B8+ 滚动 | ~25-30 |
+| Zombies | **8**(B1 ×2 + B3 ×4 + B7 ×2) | B8+ 滚动 | ~8-10 |
+| Items | **7**(getting-started 提前投产 + B4 ×4 + B6 ×2) | B8+ 滚动 | ~10-15 |
 | Combat/Bosses | 0 | ⏸ 触发条件制(§2.4) | 0-5 |
 | Codes | 0 | 永久不设(除非官方发码) | 0 |
-| **合计** | **24** | **B6-B8 ≈ +10 → 滚动** | **~45-60** |
+| **合计** | **33** | **B8+ ≈ +9 → 滚动** | **~45-60** |
 
-执行顺序进展(2026-09-29):素材底座就位(12 视频 + 7 字幕 + 官方事实)→ **B0 换皮完成**(apply-template 18 项答案表 + zombies 分类 + 首页去 demo 化 + 品牌资产生成,`gk2-site` 分支)→ **B1+B2+B3 共 16 篇发布就绪**(2026-09-26)→ **B4+B5 共 8 篇发布就绪**(2026-09-29,全部 935-1093 词、封面 1200×675 已接线、每篇嵌源视频+FAQ)→ **当前 24 篇**,八门禁本地全绿(test 161/161,typecheck 0 错,check-content 24 MDX 干净,check-links 49 页 2019 链接零断链)→ **已上线**(2026-09-29 重发 49 URL sitemap + IndexNow 48 URL 202;8 篇新页逐条 200)→ 刷新度审计 ✅ 24 篇无过期 → **下一步只剩 GSC 门**(用户侧网域验证 + sitemap 提交);之后 B6 按日历推进。
+执行顺序进展(2026-10-01):素材底座就位(12 视频 + 官方事实;字幕通道改走 `youtube-transcript-api`,补齐 A1/A2/B3/C4 四份)→ **B0 换皮完成**(apply-template 18 项答案表 + zombies 分类 + 首页去 demo 化 + 品牌资产生成,`gk2-site` 分支)→ **B1+B2+B3 共 16 篇发布就绪**(2026-09-26)→ **B4+B5 共 8 篇发布就绪**(2026-09-29)→ **B6+B7 共 9 篇发布就绪**(2026-10-01,全部 807-1049 词(均值 939)、封面 1200×675 已接线、每篇嵌源视频+FAQ)→ **当前 33 篇**,八门禁本地全绿(test 161/161,typecheck 0 错,check-content 33 MDX 干净,check-links 58 页 2899 链接零断链)→ **已上线**(2026-10-01 重发 57 URL sitemap + IndexNow 57 URL 200;9 篇新页逐条 200,首次抽查 7 条 404 经 20s 复验全部转 200 = CF Pages 传播延迟,非部署失败)→ **下一步为 B8 数据回流批**;GSC 网域验证 + sitemap 提交仍是用户侧前置门,未完成前 B8 无查询词数据可依。
 
 B4+B5 产出与三处偏离记录(必须有据可查,勿在下一批重复):
 - **`items/tools-tier-list` 未走 §2.3 的「IG 核实后发」门**(2026-09-29 决定):首发窗口内无 IG 实测条件,若继续压着不发等于把「graveyard keeper 2 tools」这一批首选词整批让给竞品。改以**诚实缺口页**形态发布——正文只写社区已报的 rusty→bronze→iron 方向与 mastery ±1/±2 数值,并显式声明「v1.0 无公开完整梯队,S-F 排名会是虚构,本 wiki 不发虚构」;标题与 description 均标注为「What Is Actually Confirmed」,不冒充梯队结论。IG 核实后应作为**升级**而非重写:补全梯队表并把诚实节降级为脚注。
@@ -206,6 +206,16 @@ B4+B5 产出与三处偏离记录(必须有据可查,勿在下一批重复):
 - **`guides/story-premise` / `guides/achievements` 同为社区单源**:`Emberville` 等地名沿用既有 `town-rebuilding` 页的同一 hedge口径(社区报道非官方);成就名来自首发周 100% 通关视频逐条转录(17 项),未在游戏内二次核实,均标 community-reported。
 - 本批顺手修:`wrangler.toml` 重复 `pages_build_output_dir` 键(非法 TOML,上一批文本编辑残留);2 处**内部流程泄漏**成正文(tools 页曾写「本页被标记待游戏内核实」、organs 页曾写「该视频字幕未抓到」)——已改写为面向读者的语言。**新批质检项:成稿后全文 grep 一次「本页/我们/字幕/核实流程」类自指词。**
 
+B6+B7 产出与偏离记录(2026-10-01,必须有据可查,勿在下一批重复):
+
+- **`items/armor-weapons-towers` 收窄为「军备供给侧」角度**(立项时计划按「IG 核数值」出门):落地核查发现该主题的**战术/战斗层已被既有页完整吃掉**——`guides/tower-defense` 已写尖刺拒马+弓箭僵尸组合、兵种多样化、旗帜争夺与防御力数值,`zombies/squads-and-barracks` 已写兵营/长枪/弓/军队多样化;而**唯一不重复的部分恰好是它本来要等的数值**(伤害/射程/塔型统计),v1.0 全网无公开数据,写出来只能是虚构。故改角度为**战争经济的生产侧**:装备/拒马/塔全部是 crafting 产物、工具梯队(rusty → bronze → iron = work mastery ±1/±2)影响作战僵尸、营房装备由铁砧产出、50 件战斗物品成就作为规模参照;页内显式列四项未文档化缺口(无数值表/无配方成本/无塔分类/无战斗物品计数)。与 tower-defense、squads 双向互链但零重叠。IG 核实后应作为**增补**而非重写。
+- **四页「IG 核」门未走**(沿用 B4 `items/tools-tier-list` 判例):`zombies/factory-automation`(IG 核实规模)、`zombies/overload-debuff`(数值 IG 核)、`guides/demo-save-carryover`(条件 IG 核)、`items/armor-weapons-towers`(数值 IG 核)同因——首发窗口内无 IG 条件,压着不发等于把「graveyard keeper 2 automation / zombie limit / demo save」三个高价值词整批让给竞品。统一以**诚实缺口页**形态发布:正文只写社区已报的形状与方向,每页设「What Is Honestly Not Documented / Still Unverified」节逐项点名缺口(阈值/数值/规模/成本),不冒充结论。IG 核实后作为**升级**补表。
+- **`guides/performance-settings` 的源本身是发售前材料**:C3(5hUTglZ9o4Q,09-16)只基于 demo + 开发者直播,非成品实测。该页通篇标注「发售前测试」口径,并显式声明 v1.0 无官方设置文档(**不编造 Graphics 选项表**),把可执行建议收敛到证据支持的**并发度**轴(同时作业僵尸数 = 帧生成瓶颈,而非画质),这是「设置页」在无设置文档时的诚实形态。
+- **`guides/console-versions` 平台代际分层标注**:官方(IGN 首映片)只到平台族——PC(Steam/GOG/Epic)/ PlayStation / Xbox / Nintendo Switch;Switch 2、PS5、PS4、日版 09-23 等具体代际来自社区报道,预购审判官服装配色(Steam 浅蓝 / Xbox 绿 / PS 深蓝 / Switch 红)为二手转述。页内以「What Is Actually Confirmed Versus Reported」表逐条标注出处等级;Switch 版本顾虑写明是**风险评估而非问题报道**,避免读成实机缺陷。
+- **两页与既有内容的边界设计**(防站内自食):`guides/inventory-logistics` 只写**玩家侧**库存(分区共享规则/箱柜按产线排布/留一物习惯),把**僵尸侧**搬运网络让给既有 `zombies/logistics-network`,两页互链并各自点明分界;`guides/faith-and-sermons` 在既有 `beginner-guide` 一段式覆盖之上做**独立专题**(每 wrath day 一次布道、town gratitude 卷轴囤积、教堂品质过阈值即无机制收益、prayer 类型影响回报、waypoints 优先),并明确指向而非复述 `cemetery-quality` 的装饰收益。
+- `zombies/overload-debuff` 补齐了既有两页都只带一句的**具名缺口**(`logistics-network` 写「oversized hordes carry penalties of their own」、`squads-and-barracks` 写「the horde penalty」)——现由独立页承载并被两页指向,属填补而非重复。
+- 本批质检执行:按上批新立规则全文 grep 自指词(本页/我们/字幕/核实流程/视频/creator),9 篇正文零命中;`videos` frontmatter 中的源视频 ID 为正常引用,不计泄漏。三篇 description 初稿超 schema 165 上限(inventory 166 / selling 175 / factory 166),已修剪至 ≤164。
+
 ## 七、B0 启动前一次性检查(2026-09-26 列,做完勾掉)
 
 - [x] **域名定案**——2026-09-26 先用占位域 `graveyardkeeper2.app` 完成换皮(未部署无 SEO 影响);正式购入后全局替换该域(wrangler.toml SITE_URL + site.ts domain 两处)+ Cloudflare 绑定,再走「先绑域→改 SITE_URL→再部署」
@@ -213,7 +223,7 @@ B4+B5 产出与三处偏离记录(必须有据可查,勿在下一批重复):
 - [x] apply-template 答案表——`gk2-apply-answers.json`(18 项:游戏名 Graveyard Keeper 2/短名 GK2/主题色 #4e7a3a 苔绿/栏目=guides+items→手工加 zombies/en 单语/清 demo/首页 preset 1/删 landing)
 - [x] **git 提交整树**——2026-09-26 B0-B3 全部内容统一提交到 `gk2-site` 分支
 - [x] **fork 测试口径收口**——上游 8 个模板元测试(断言 demo 态/landing/ja,换皮后必然红)移入 `tests/template-meta/` 并从 vitest+tsconfig 排除(不删除,保上游 merge 可解析);url/tags/seo/content-utils/routing-flags/home-ui 六个 fork 相关套件改为 en 单语口径修复;`pnpm test` 161/161 绿。fork 契约(见 scripts/e2e-apply-template.mjs)=build+check-config 绿,测试套件非 fork 承诺项
-- [x] **部署上线**——2026-09-26 CF Pages 直传 + 真域 graveyardkeeper2.app 绑定生效(zone active/DNS CNAME/证书签发全自动链路),线上四项 200;IndexNow 首推 40 URL(202)。**2026-09-29 B4+B5 上线后重发:49 URL sitemap / IndexNow 48 URL(202),8 篇新页逐条 200**,canonical/og:image 抽验正确(⚠️ 直传部署无 git-connected CI,v2.36 IndexNow 自动化不生效——每次部署后手动 `pnpm submit-indexnow --site` 是唯一通道)
+- [x] **部署上线**——2026-09-26 CF Pages 直传 + 真域 graveyardkeeper2.app 绑定生效(zone active/DNS CNAME/证书签发全自动链路),线上四项 200;IndexNow 首推 40 URL(202)。**2026-09-29 B4+B5 上线后重发:49 URL sitemap / IndexNow 48 URL(202),8 篇新页逐条 200**;**2026-10-01 B6+B7 上线后重发:57 URL sitemap / IndexNow 57 URL(200),9 篇新页逐条 200**(首轮抽查 7 条返 404,20 秒后复验全部 200 = CF Pages 边缘传播延迟,**非部署失败**——沿用 §7 Email Obfuscation 一类教训:线上抽查要复验再下结论),canonical/og:image 抽验正确(⚠️ 直传部署无 git-connected CI,v2.36 IndexNow 自动化不生效——每次部署后手动 `pnpm submit-indexnow --site` 是唯一通道)
 - [ ] GSC 确认——资源验证 + sitemap 提交(需用户 Google 账号操作;之后可接 anvil-ops 的 GSC 集成);`PUBLIC_CF_BEACON_TOKEN` 建议一并填上开 CF Web Analytics。**2026-09-29 附注:zone 的 TXT 里已存在 `google-site-verification=iRizo…`(网域验证法),若 GSC 里已点过验证则本项只剩提交 sitemap `https://graveyardkeeper2.app/sitemap-index.xml`**
 - [ ] **Email Routing 收尾(2026-09-29,管线已完成 3/4)**——✅ 目标地址 yangdan379@gmail.com 已建且 verified=true(本账号曾验证过,免点邮件);✅ 转发规则 contact@graveyardkeeper2.app → yangdan379@gmail.com 已建 enabled;✅ 联系页 Email 行已上线(site.ts contactEmail,commit 2a8a8cc);❌ **堵点:zone 里 5 条 Namecheap `eforward1-5.registrar-servers.com` MX 未清 + CF MX(route1/2/3.mx.cloudflare.net,prio 9/77/66)/DKIM(cf2024-1._domainkey)/SPF(`v=spf1 include:_spf.mx.cloudflare.net ~all`)未写入——wrangler OAuth token 无 dns_records 权限(GET 10000 拒),enable 报 2008 "Non-Cloudflare MX records exist"。需用户 dashboard 改或给 DNS 编辑 token 后重跑**。CF 权威记录值可从 `GET /zones/{id}/email/routing/dns` 随取随新。已知坑:zone 开着 Email Obfuscation,页面 mailto 会被改写成 /cdn-cgi/l/email-protection(grep 邮箱原文查不到≠没部署,解码 data-cfemail 验证)
 - [x] 换皮后删 demo 文章——apply-template 清 11 篇 demo 文+24 个 demo 资产+45 个 landing 文件;ja 目录残留 .gitkeep 已删

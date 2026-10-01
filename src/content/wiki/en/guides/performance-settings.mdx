@@ -1,0 +1,73 @@
+---
+title: "Graveyard Keeper 2 Performance Guide: Frame Rate and Settings"
+description: "Graveyard Keeper 2 performance explained: why zombie count matters more than graphics, what pre-launch testing found, and what is honestly still undocumented."
+category: "guides"
+image: '../../../../assets/covers/en-guides-performance-settings.png'
+date: 2026-10-01
+lastModified: 2026-10-01
+tags: ["systems", "tips", "review"]
+gameVersion: '1.0'
+videos: ["5hUTglZ9o4Q"]
+summary: "Graveyard Keeper 2's performance ceiling is simulation-bound, not graphics-bound. Pre-launch testing on the demo found a solid frame rate on simple tasks but small frame-pacing fluctuations once several zombies ran automation in parallel. Loading between areas is near-instant. No official settings documentation exists."
+faq:
+  - question: "Does Graveyard Keeper 2 run well on lower-end hardware?"
+    answer: "Early testing on the demo reported a stable technical base and solid frame rate during simple tasks, with quick rendering response and no stutters between screens. The same review flagged optimization on limited hardware as its main unresolved worry, so treat smooth early play as encouraging rather than conclusive."
+  - question: "Why does the game stutter when zombies are working?"
+    answer: "Pre-launch testing traced frame-pacing fluctuations specifically to several zombies running resource automation at the same time, and read that as simulation load rather than graphics load. If that holds, the lever that matters most is how much autonomous work is happening at once, not your visual settings."
+  - question: "Are there graphics settings you should change?"
+    answer: "There is no official documentation of the game's options in our sources, so we will not invent a list of settings to toggle. The performance advice that is grounded in evidence points at worker concurrency instead. Verify your own results rather than trusting a settings guide written from assumption."
+  - question: "Is performance in a late-game save worse?"
+    answer: "Nobody knows yet, and that is worth saying plainly. The reviewer who raised the concern noted that a limited demo masks a full game's load, and named advanced-save performance as an open question mark. Check community reports for your own platform before a very large base."
+---
+
+## How Does Graveyard Keeper 2 Perform?
+
+Graveyard Keeper 2 rebuilt its predecessor's flat pixel world in three dimensions, adding dynamic shadows, vegetation that reacts to the environment, and architectural layers under the medieval scenery. That ambition raises the one question every sequel of this shape invites: does it still run?
+
+The most detailed public testing available comes from a reviewer who worked through the pre-launch demo and the developer streams rather than the shipped game. Their read is worth stating precisely, because the interesting part is not the verdict — it is where the load actually sits.
+
+Their summary: the demo held a solid frame rate during simpler tasks, rendering responded quickly around the opening church area, and screen transitions did not stall. Their reservation was more specific, and it is the part that matters.
+
+## What Actually Limits the Frame Rate?
+
+Not the graphics.
+
+The reviewer's biggest reservation appeared the moment several zombies were working on resource automation at the same time. As multiple characters ran parallel routes on screen, they noticed small fluctuations in frame pacing — and read that as a heavier weight on simulation calculations than on graphics proper.
+
+If that reading is right, then the cost scales with **how much is happening**, not how much is drawn. Ten zombies standing idle are cheap; several zombies actively pathing between stations, carrying goods and running recipes are not, because each one is a small simulation the game has to keep stepping.
+
+That has a practical consequence: the lever you control is concurrency, not fidelity. Keeping a smaller number of automation loops running at once, and keeping each loop's travel short, is the intervention that follows from the evidence. The [zombie logistics network guide](/zombies/logistics-network/) covers route design, which turns out to be a performance topic too — long crossing routes keep more workers in motion for longer.
+
+One caveat before you build policy on it: this is a single reviewer's observation on a demo, not a benchmark. Test it in your own save.
+
+## How Long Are the Load Times?
+
+Short, and notably better than the original. The same testing reports that moving between the graveyard, interiors, and the village happens almost instantly — described as a considerable leap over the stumbles and small freezes that interrupted the first game.
+
+This is one of the quieter quality-of-life wins in the sequel. Graveyard Keeper's loop runs on short repetitive trips, so a one-second improvement per transition compounds across a session. If you bounced off the original partly because of its loading rhythm, this is the change to know about.
+
+## What Has the Developer Said About Optimization?
+
+Developer streams and announcements — as summarized by the same coverage — claim the routing system was rebuilt to support dozens of simultaneous tasks without choking the processor, and the final scope promises battles with undead armies over denser maps. The reviewer's read is that the studio is aware of the first game's bottlenecks and is addressing them by design rather than by accident.
+
+Battles are the part to watch. Undead armies on a dense map is precisely the workload the evidence points at as expensive, which makes the [tower defense and battle systems](/guides/tower-defense/) the most demanding content in the game by expectation. Treat early reports from large battles as more informative than reports from the graveyard.
+
+## What Should You Actually Do About Performance?
+
+Given how thin the documented evidence is, the honest advice is a short list of behaviors rather than a settings table:
+
+- **Scale automation gradually.** Add workers to a loop one at a time and watch for pacing changes instead of filling every slot at once.
+- **Keep routes short.** A worker with a short trip finishes and idles sooner; a worker crossing a zone stays simulated the whole way.
+- **Spread heavy work across zones.** Concentrating every station in one area concentrates the simultaneous simulation in one place.
+- **Test before you commit.** Your hardware and platform are not the reviewer's. If you own the game, the demo run they describe is the run you can repeat.
+- **Check the current state of play.** Post-launch reports will supersede everything above, and the [is it worth it guide](/guides/is-it-worth-it/) tracks the broader launch-status picture.
+
+## What Is Honestly Still Unknown?
+
+Several things, and it is better to name them than to paper over them:
+
+- **The options menu.** No official documentation of the game's graphics or performance settings appears in our sources. Any list of specific toggles circulating in a comment section is somebody's memory, not a reference.
+- **Advanced-save performance.** The reviewer who raised the concern was explicit that a limited demo masks the full game's load, and named performance in an advanced save their big question mark. That question is not answered here.
+- **Platform differences.** Testing covered one setup. Performance on consoles, handhelds, and older PCs is not documented in our sources, and the [platform comparison](/guides/console-versions/) covers what is known about the versions themselves.
+
+The honest bottom line: the technical base looks solid, the expensive part of the game is the part that has barely been measured, and the smart move is to verify rather than assume. If the demo runs well on your machine for an hour of normal play, that is stronger evidence than any guide — including this one.
